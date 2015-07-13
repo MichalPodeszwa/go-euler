@@ -1,5 +1,7 @@
 package main
 
+import "strconv"
+
 func findPrimes(c chan int, limit int) {
 	defer close(c)
 	numbers := make(map[int]bool)
