@@ -4,14 +4,14 @@ import "fmt"
 
 func multiples(c chan int) {
 	defer close(c)
-	for i := 0; i < 30000000; i++ {
+	for i := 0; i < 1000; i++ {
 		if i%3 == 0 || i%5 == 0 {
 			c <- i
 		}
 	}
 }
 
-func main() {
+func First() {
 	nums := make(chan int, 2)
 	sum := 0
 	go multiples(nums)

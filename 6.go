@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Sixth() {
 	sumSquares := 0
 	squaresSum := 0
 	for i := 0; i <= 100; i++ {
